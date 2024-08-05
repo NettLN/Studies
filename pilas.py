@@ -29,4 +29,5 @@ objeto.pop()
 objeto.pop()
 objeto.pop()
 objeto.pop()
+objeto.push(2)
 

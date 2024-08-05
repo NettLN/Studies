@@ -30,4 +30,4 @@ objeto.pop()
 objeto.pop()
 objeto.pop()
 objeto.push(2)
-
+objeto.push(23)

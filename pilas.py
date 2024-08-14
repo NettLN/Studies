@@ -17,6 +17,7 @@ class Pila():
     def mostrar(self):
         print(f"La pila completa es: {self.datos}")
 
+<<<<<<< HEAD
 objeto = Pila()
 objeto.push(5)
 objeto.push(3)
@@ -31,3 +32,11 @@ objeto.pop()
 objeto.pop()
 objeto.push(2)
 objeto.push(23)
+=======
+    def peek(self):
+        if not self.vacia():
+            return self.datos[-1]  
+        else:
+            return None
+
+>>>>>>> d7eb591 (Ejercicios de Pilas)

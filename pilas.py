@@ -15,7 +15,13 @@ class Pila():
             return dato
 
     def mostrar(self):
-        print(f"La pila completa es: {self.datos}")
+        if not self.vacia():
+            print("Contenido de la pila:")
+            for item in reversed(self.datos):
+                print(item)
+        else:
+            print("La pila está vacía")
+        return [str(item) for item in reversed(self.datos)]
 
     def vacia(self):
         return len(self.datos) == 0

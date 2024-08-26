@@ -8,17 +8,14 @@ def ordenar_pila(pila):
     pila_aux = Pila()
 
     while not pila.vacia():
-        # Tomamos el elemento superior de la pila original
-        temp = pila.pop()
+        maximo = pila.pop()
 
-        # Transferimos los elementos de pila_aux a pila si son menores que temp
-        while not pila_aux.vacia() and pila_aux.peek() > temp:
+        # Transferimos los elementos de pila_aux a pila si son menores que maximo
+        while not pila_aux.vacia() and pila_aux.peek() > maximo:
             pila.push(pila_aux.pop())
+        
+        pila_aux.push(maximo)
 
-        # Colocamos temp en su lugar en pila_aux
-        pila_aux.push(temp)
-
-    # Transferimos de nuevo los elementos ordenados a la pila original
     while not pila_aux.vacia():
         pila.push(pila_aux.pop())
 
